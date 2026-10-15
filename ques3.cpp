@@ -1,19 +1,15 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-    int searchnum;
-    int numbers[] = {10, 20, 30, 40, 50};
-
-    cout << "Enter the number to search: ";
-    cin >> searchnum;
-
-    for (int index = 0; index < 5; index++) {
-        if (numbers[index] == searchnum) {
-            cout << "Number found!";
+int main(){
+    int found=37;
+    for(int i=1;i<=50;i++){
+        if(found==i){
+            cout<<"Number is found";
+            break;
+        }else{
+            cout<<"Number is not found";
             break;
         }
     }
-
     return 0;
 }
